@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.key{
+			display: block;
+		}
+
+		.test1{
+            display: none;
+		}
+
+		.test2{
+            display: none;
+		}
+
+		.mantiya{
+			position: absolute;
+		}
+
+		.ring{
+			position: absolute;
+		}
+
+		.palochka{
+			position: absolute;
+		}
+
+		.gun{
+			position: absolute;
+		}
+
+		.metla{
+			position: absolute;
+		}
+
+		.axe{
+			position: absolute;
+		}
+
+		.flaire_gun{
+			position: absolute;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="key">
+			<img src="door.png" class="door" alt="" style="height: 600px; width: 400px; margin-left: 150px;">
+			<img src="door2.png" alt="" style="height: 600px; width: 400px; margin-left: 15px;">
+			<img src="door3.png" alt="" style="height: 600px; width: 500px;">
+	</div>
+
+	<div class="test1"> 
+		<div style="background-image: url(bg.jpg); height: 800px; background-size: 100% 100%">
+			<div>
+				<h1 class="text-white">Помогите Potis Потеру найти его вещи, а то шрам давит на глаза. Не минимум 23 очков.</h1>
+				<h1 class="text-white ochki-text">0</h1>
+				<button>Exit</button>
+			</div>
+			<div style="margin-left: 900px;">
+				<img class="mantiya" src="mantiya.png" alt="" style="height: 50px; width: 50px;">
+			</div>
+			<div style="margin-left: 250px; margin-top: 150px;">
+				<img class="ring" src="ring.png" alt="" style="height: 20px; width: 20px;">
+			</div>
+			<div style="margin-left: 1400px;">
+				<img class="palochka" src="palochka.png" alt="" style="height: 50px; width: 50px;">
+			</div>
+			<div style="margin-left: 730px; margin-top: 330px;">
+				<img class="gun" src="gun.png" alt="" style="height: 50px; width: 70px;">
+			</div>
+			<div style="margin-left: 100px; margin-top: 530px;">
+				<img class="metla" src="metla.png" alt="" style="height: 70px; width: 70px;">
+			</div>
+		</div>
+	</div>
+
+	<div class="test2"> 
+		<div style="background-image: url(bg.jpg); height: 800px; background-size: 100% 100%">
+			<div>
+				<h1 class="text-white">Помогите Pyro найти его кледенец и радужигатель. Макс очков 20</h1>
+				<h1 class="text-white ochki-text">0</h1>
+				<button>Exit</button>
+			</div>
+			<div style="margin-left: 900px;">
+				<img class="mantiya" src="mantiya.png" alt="" style="height: 50px; width: 50px;">
+			</div>
+			<div style="margin-left: 250px; margin-top: 150px;">
+				<img class="ring" src="ring.png" alt="" style="height: 20px; width: 20px;">
+			</div>
+			<div style="margin-left: 1400px;">
+				<img class="palochka" src="palochka.png" alt="" style="height: 50px; width: 50px;">
+			</div>
+			<div style="margin-left: 730px; margin-top: 330px;">
+				<img class="gun" src="gun.png" alt="" style="height: 50px; width: 70px;">
+			</div>
+			<div style="margin-left: 100px; margin-top: 530px;">
+				<img class="metla" src="metla.png" alt="" style="height: 70px; width: 70px;">
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		//Локация 1-я
+		let ochki = 0;
+		document.querySelector(".ochki-text").innerHTML = ochki
+		document.querySelector(".door").onclick = function(){
+			alert('Добро пожаловать в Хогвартс! ГОТОВЬТЕСЬ К МЯСУ.')
+			document.querySelector('.test1').style.display = "block"
+			document.querySelector('.key').style.display = "none"
+		}
+		document.querySelector(".mantiya").onclick = function(){
+			ochki = ochki + 1
+			document.querySelector(".ochki-text").innerHTML = ochki
+			document.querySelector('.mantiya').style.display = "none"
+		}
+		document.querySelector(".ring").onclick = function(){
+			ochki = ochki + 10
+			document.querySelector(".ochki-text").innerHTML = ochki
+			document.querySelector('.ring').style.display = "none"
+		}
+		document.querySelector(".palochka").onclick = function(){
+			ochki = ochki + 1
+			document.querySelector(".ochki-text").innerHTML = ochki
+			document.querySelector('.palochka').style.display = "none"
+		}
+		document.querySelector(".gun").onclick = function(){
+			ochki = ochki + 10
+			document.querySelector(".ochki-text").innerHTML = ochki
+			document.querySelector('.gun').style.display = "none"
+		}
+		document.querySelector(".metla").onclick = function(){
+			ochki = ochki + 1
+			document.querySelector(".ochki-text").innerHTML = ochki
+			document.querySelector('.metla').style.display = "none"
+		}
+
+	</script>
+
+
+</body>
+</html>
